@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/search.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/pokedex.css">
+
+    <title>Pokédex</title>
+</head>
+
+<body>
+    <section class="content">
+        <div class="texts">
+
+            <h1 class="logo"><img class="logoImg"
+                    src="https://user-images.githubusercontent.com/29473781/180619084-a56960ab-7efa-4e34-9d33-4e3e581d62ff.png"
+                    alt="Pokedex Logo" srcset=""></h1>
+
+            <a href="./index.html">All Pokemons</a>
+            
+        </div>
+
+        <form action="" onsubmit="searchPokemon(event)">
+            <input class="box" type="search" name="pokemon" autocomplete="off" placeholder="Type here">
+        </form>
+
+        <div data-poke-card class="poke-card">
+            <img class="pokeball" src="https://raw.githubusercontent.com/lbns14/Projeto-Pokedex/main/pokeball.svg" alt="Pokeball">
+            <div data-poke-name></div>
+
+            <div data-poke-id class="poke-id"></div>
+
+            <div>
+                <img data-poke-img class="poke-img" src=""/>
+            </div>
+
+            <div data-poke-types class="poke-types"></div>
+
+            <div data-poke-stats class="poke-stats"></div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <script src="./assets/js/search.js"></script>
+
+
+</body>
+
+</html>
