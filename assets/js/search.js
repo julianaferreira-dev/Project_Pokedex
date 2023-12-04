@@ -5,8 +5,6 @@ const pokeId = document.querySelector('[data-poke-id]');
 const pokeTypes = document.querySelector('[data-poke-types]');
 const pokeStats = document.querySelector('[data-poke-stats]');
 
-
-
 const searchPokemon = event => {
     event.preventDefault();
     const { value } = event.target.pokemon;
@@ -14,7 +12,6 @@ const searchPokemon = event => {
         .then(data => data.json())
         .then(response => renderPokemonData(response))
     event.target.pokemon.value = '';
-
 }
 
 const renderPokemonData = data => {
@@ -29,7 +26,6 @@ const renderPokemonData = data => {
 }
 
 const setCardColor = types => {
-
     pokeImg.style.backgroundSize = ' 5px 5px';
 }
 
