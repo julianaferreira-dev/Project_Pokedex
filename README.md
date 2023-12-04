@@ -1,1 +1,1 @@
-# Project_Pok-dex
+# Project_Pokedex
